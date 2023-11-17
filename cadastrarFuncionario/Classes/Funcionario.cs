@@ -9,19 +9,19 @@ namespace CadastrarFuncionario.Classes
     public class Funcionario
     {
         // Atributos
-        private string Id { get; set; }
+        public string Id { get; set; }
 
-        private string Nome { get; set; }
-        private DateTime DataNasc { get; set; }
-        private string Sexo { get; set; }
+        public string Nome { get; set; }
+        public DateTime DataNasc { get; set; }
+        public string Sexo { get; set; }
 
-        private string Cpf { get; set; }
-        private string Rg { get; set; }
-        private string EstadoCivil { get; set; }
+        public string Cpf { get; set; }
+        public string Rg { get; set; }
+        public string EstadoCivil { get; set; }
 
-        private string Telefone { get; set; }
-        private string Email { get; set; }
+        public string Telefone { get; set; }
+        public string Email { get; set; }
 
-        private string Funcao { get; set; }
+        public string Funcao { get; set; }
     }
 }
