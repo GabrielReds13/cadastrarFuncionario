@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CadastrarFuncionario.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace CadastrarFuncionario
     public partial class Form1 : Form
     {
         // Atributos
+        public string[] allFuncionarios = Banco.Consultar();
         public string[] plchVazios = {" ", "", null};
         public string[] plch = {
             "Nome completo",
@@ -62,6 +64,25 @@ namespace CadastrarFuncionario
                 )
                 {
                     // Realizar cadastro
+                    Funcionario f = new Funcionario(
+                        txt_nome.Text,
+                        Convert.ToDateTime(txt_dataNascimento.Text).Date,
+                        cb_sexo.Text,
+                        txt_cpf.Text,
+                        txt_rg.Text,
+                        cb_estadoCivil.Text,
+                        txt_telefone.Text,
+                        txt_email.Text,
+                        cb_funcao.Text
+                    );
+                    Banco.Inserir(f);
+
+                    lb_funcionarios.Items.Clear();
+
+                    allFuncionarios = Banco.Consultar();
+
+                    lb_funcionarios.Items.AddRange(allFuncionarios);
+                    lb_funcionarios.Refresh();
                 }
             }
 

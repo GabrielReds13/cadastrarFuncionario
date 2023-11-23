@@ -8,8 +8,8 @@ namespace CadastrarFuncionario.Classes
 {
     public class Funcionario
     {
-        // Atributos
-        public string Id { get; set; }
+        // - Atributos -
+        public int Id { get; set; }
 
         public string Nome { get; set; }
         public DateTime DataNasc { get; set; }
@@ -23,5 +23,30 @@ namespace CadastrarFuncionario.Classes
         public string Email { get; set; }
 
         public string Funcao { get; set; }
+
+        // - Metodo Construtor -
+        public Funcionario
+        (
+            string nome,
+            DateTime dataNasc,
+            string sexo, 
+            string cpf, 
+            string rg, 
+            string estadoCivil, 
+            string telefone, 
+            string email, 
+            string funcao 
+        ) 
+        {
+            Nome = nome;
+            DataNasc = dataNasc;
+            Sexo = sexo;
+            Cpf = cpf;
+            Rg = rg;
+            EstadoCivil = estadoCivil;
+            Telefone = telefone;
+            Email = email;
+            Funcao = funcao;
+        }
     }
 }

@@ -15,7 +15,7 @@ namespace CadastrarFuncionario.Classes
         private string _porta = "3360";
         private string _usuario = "root";
         private string _senha = "root";
-        private string _bancoDadosNome = "dssistemas_db";
+        private string _bancoDadosNome = "func_system";
         private MySqlConnection connection;
         private MySqlCommand command;
 

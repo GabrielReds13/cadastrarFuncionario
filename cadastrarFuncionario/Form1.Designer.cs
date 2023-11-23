@@ -46,7 +46,7 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.txt_telefone = new System.Windows.Forms.MaskedTextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lb_funcionarios = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_limpar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_salvar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -90,6 +90,9 @@
             this.cb_sexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cb_sexo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.cb_sexo.FormattingEnabled = true;
+            this.cb_sexo.Items.AddRange(new object[] {
+            "Masculino",
+            "Feminino"});
             this.cb_sexo.Location = new System.Drawing.Point(54, 265);
             this.cb_sexo.Margin = new System.Windows.Forms.Padding(0);
             this.cb_sexo.Name = "cb_sexo";
@@ -204,6 +207,11 @@
             this.cb_estadoCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cb_estadoCivil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.cb_estadoCivil.FormattingEnabled = true;
+            this.cb_estadoCivil.Items.AddRange(new object[] {
+            "Casado(a)",
+            "Solteiro(a)",
+            "Divorciado(a)",
+            "Viúvo(a)"});
             this.cb_estadoCivil.Location = new System.Drawing.Point(54, 384);
             this.cb_estadoCivil.Margin = new System.Windows.Forms.Padding(0);
             this.cb_estadoCivil.Name = "cb_estadoCivil";
@@ -216,6 +224,22 @@
             this.cb_funcao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cb_funcao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.cb_funcao.FormattingEnabled = true;
+            this.cb_funcao.Items.AddRange(new object[] {
+            "Agronomia ",
+            "Biotecnologia",
+            "Ecologia ",
+            "Engenharia Ambiental",
+            "Engenharia de Pesca",
+            "Engenharia Hídrica",
+            "Gestão Ambiental",
+            "Geologia ",
+            "Oceanografia ",
+            "Engenharia Agrícola ",
+            "Engenharia de Energia ",
+            "Engenharia Florestal ",
+            "Medicina Veterinária",
+            "Meteorologia",
+            "Zootecnia"});
             this.cb_funcao.Location = new System.Drawing.Point(54, 571);
             this.cb_funcao.Margin = new System.Windows.Forms.Padding(0);
             this.cb_funcao.Name = "cb_funcao";
@@ -272,15 +296,15 @@
             this.txt_telefone.TabIndex = 18;
             this.txt_telefone.Text = "Telefone";
             // 
-            // listBox1
+            // lb_funcionarios
             // 
-            this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(34)))), ((int)(((byte)(38)))));
-            this.listBox1.ForeColor = System.Drawing.Color.White;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(451, 123);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(554, 563);
-            this.listBox1.TabIndex = 21;
+            this.lb_funcionarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(34)))), ((int)(((byte)(38)))));
+            this.lb_funcionarios.ForeColor = System.Drawing.Color.White;
+            this.lb_funcionarios.FormattingEnabled = true;
+            this.lb_funcionarios.Location = new System.Drawing.Point(451, 123);
+            this.lb_funcionarios.Name = "lb_funcionarios";
+            this.lb_funcionarios.Size = new System.Drawing.Size(554, 563);
+            this.lb_funcionarios.TabIndex = 21;
             // 
             // Form1
             // 
@@ -288,7 +312,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(34)))), ((int)(((byte)(38)))));
             this.ClientSize = new System.Drawing.Size(1024, 729);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lb_funcionarios);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.txt_telefone);
             this.Controls.Add(this.txt_email);
@@ -347,7 +371,7 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.MaskedTextBox txt_telefone;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lb_funcionarios;
     }
 }
 

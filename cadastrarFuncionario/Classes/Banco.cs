@@ -18,7 +18,6 @@ namespace CadastrarFuncionario.Classes
                 Conexao sql = new Conexao();
                 var insert = sql.Comando("insert into Funcionario (" +
                     // Atributos
-                    "id_fun, " +
                     "nome_fun, " +
                     "data_nasc_fun, " +
                     "sexo_fun, " +
@@ -31,7 +30,6 @@ namespace CadastrarFuncionario.Classes
                     
                     // Valores
                     "values (" +
-                    "@id, " +
                     "@nome, " +
                     "@data_nasc, " +
                     "@sexo, " +
@@ -43,9 +41,8 @@ namespace CadastrarFuncionario.Classes
                     "@funcao);");
 
                 // Definir valores
-                insert.Parameters.AddWithValue("@id", f.Id);
                 insert.Parameters.AddWithValue("@nome", f.Nome);
-                insert.Parameters.AddWithValue("@data_nasc", f.DataNasc);
+                insert.Parameters.AddWithValue("@data_nasc", f.DataNasc.Date);
                 insert.Parameters.AddWithValue("@sexo", f.Sexo);
                 insert.Parameters.AddWithValue("@cpf", f.Cpf);
                 insert.Parameters.AddWithValue("@rg", f.Rg);
