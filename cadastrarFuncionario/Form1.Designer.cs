@@ -47,6 +47,8 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.txt_telefone = new System.Windows.Forms.MaskedTextBox();
             this.lb_funcionarios = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_limpar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_salvar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -56,13 +58,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_nome
             // 
             this.txt_nome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(34)))), ((int)(((byte)(38)))));
             this.txt_nome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nome.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.txt_nome.Location = new System.Drawing.Point(54, 143);
             this.txt_nome.Margin = new System.Windows.Forms.Padding(0);
@@ -76,18 +79,18 @@
             // 
             this.txt_dataNascimento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(34)))), ((int)(((byte)(38)))));
             this.txt_dataNascimento.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_dataNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txt_dataNascimento.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_dataNascimento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.txt_dataNascimento.Location = new System.Drawing.Point(54, 203);
             this.txt_dataNascimento.Margin = new System.Windows.Forms.Padding(0, 0, 0, 4);
             this.txt_dataNascimento.Name = "txt_dataNascimento";
-            this.txt_dataNascimento.Size = new System.Drawing.Size(366, 19);
+            this.txt_dataNascimento.Size = new System.Drawing.Size(366, 24);
             this.txt_dataNascimento.TabIndex = 5;
             this.txt_dataNascimento.Text = "Data de nascimento";
             // 
             // cb_sexo
             // 
-            this.cb_sexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cb_sexo.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_sexo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.cb_sexo.FormattingEnabled = true;
             this.cb_sexo.Items.AddRange(new object[] {
@@ -96,14 +99,14 @@
             this.cb_sexo.Location = new System.Drawing.Point(54, 265);
             this.cb_sexo.Margin = new System.Windows.Forms.Padding(0);
             this.cb_sexo.Name = "cb_sexo";
-            this.cb_sexo.Size = new System.Drawing.Size(366, 28);
+            this.cb_sexo.Size = new System.Drawing.Size(366, 36);
             this.cb_sexo.TabIndex = 7;
             this.cb_sexo.Text = "Sexo";
             // 
             // btn_limpar
             // 
             this.btn_limpar.Image = global::CadastrarFuncionario.Properties.Resources.Clear;
-            this.btn_limpar.Location = new System.Drawing.Point(242, 647);
+            this.btn_limpar.Location = new System.Drawing.Point(242, 627);
             this.btn_limpar.Margin = new System.Windows.Forms.Padding(0);
             this.btn_limpar.Name = "btn_limpar";
             this.btn_limpar.Size = new System.Drawing.Size(178, 50);
@@ -114,7 +117,7 @@
             // btn_salvar
             // 
             this.btn_salvar.Image = global::CadastrarFuncionario.Properties.Resources.Save_Off;
-            this.btn_salvar.Location = new System.Drawing.Point(54, 647);
+            this.btn_salvar.Location = new System.Drawing.Point(54, 627);
             this.btn_salvar.Margin = new System.Windows.Forms.Padding(0);
             this.btn_salvar.Name = "btn_salvar";
             this.btn_salvar.Size = new System.Drawing.Size(178, 50);
@@ -169,12 +172,12 @@
             // 
             this.txt_cpf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(34)))), ((int)(((byte)(38)))));
             this.txt_cpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txt_cpf.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.txt_cpf.Location = new System.Drawing.Point(54, 327);
             this.txt_cpf.Margin = new System.Windows.Forms.Padding(0, 0, 0, 4);
             this.txt_cpf.Name = "txt_cpf";
-            this.txt_cpf.Size = new System.Drawing.Size(202, 19);
+            this.txt_cpf.Size = new System.Drawing.Size(202, 24);
             this.txt_cpf.TabIndex = 10;
             this.txt_cpf.Text = "CPF";
             // 
@@ -193,18 +196,18 @@
             // 
             this.txt_rg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(34)))), ((int)(((byte)(38)))));
             this.txt_rg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_rg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txt_rg.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_rg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.txt_rg.Location = new System.Drawing.Point(278, 327);
             this.txt_rg.Margin = new System.Windows.Forms.Padding(0, 0, 0, 4);
             this.txt_rg.Name = "txt_rg";
-            this.txt_rg.Size = new System.Drawing.Size(142, 19);
+            this.txt_rg.Size = new System.Drawing.Size(142, 24);
             this.txt_rg.TabIndex = 12;
             this.txt_rg.Text = "RG";
             // 
             // cb_estadoCivil
             // 
-            this.cb_estadoCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cb_estadoCivil.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_estadoCivil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.cb_estadoCivil.FormattingEnabled = true;
             this.cb_estadoCivil.Items.AddRange(new object[] {
@@ -215,13 +218,13 @@
             this.cb_estadoCivil.Location = new System.Drawing.Point(54, 384);
             this.cb_estadoCivil.Margin = new System.Windows.Forms.Padding(0);
             this.cb_estadoCivil.Name = "cb_estadoCivil";
-            this.cb_estadoCivil.Size = new System.Drawing.Size(366, 28);
+            this.cb_estadoCivil.Size = new System.Drawing.Size(366, 36);
             this.cb_estadoCivil.TabIndex = 14;
             this.cb_estadoCivil.Text = "Estado civil";
             // 
             // cb_funcao
             // 
-            this.cb_funcao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cb_funcao.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_funcao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.cb_funcao.FormattingEnabled = true;
             this.cb_funcao.Items.AddRange(new object[] {
@@ -243,7 +246,7 @@
             this.cb_funcao.Location = new System.Drawing.Point(54, 571);
             this.cb_funcao.Margin = new System.Windows.Forms.Padding(0);
             this.cb_funcao.Name = "cb_funcao";
-            this.cb_funcao.Size = new System.Drawing.Size(366, 28);
+            this.cb_funcao.Size = new System.Drawing.Size(366, 36);
             this.cb_funcao.TabIndex = 15;
             this.cb_funcao.Text = "Função";
             // 
@@ -251,7 +254,7 @@
             // 
             this.txt_email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(34)))), ((int)(((byte)(38)))));
             this.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_email.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.txt_email.Location = new System.Drawing.Point(54, 509);
             this.txt_email.Margin = new System.Windows.Forms.Padding(0);
@@ -287,31 +290,58 @@
             // 
             this.txt_telefone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(34)))), ((int)(((byte)(38)))));
             this.txt_telefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_telefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txt_telefone.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_telefone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
             this.txt_telefone.Location = new System.Drawing.Point(54, 449);
             this.txt_telefone.Margin = new System.Windows.Forms.Padding(0, 0, 0, 4);
             this.txt_telefone.Name = "txt_telefone";
-            this.txt_telefone.Size = new System.Drawing.Size(366, 19);
+            this.txt_telefone.Size = new System.Drawing.Size(366, 24);
             this.txt_telefone.TabIndex = 18;
             this.txt_telefone.Text = "Telefone";
             // 
             // lb_funcionarios
             // 
             this.lb_funcionarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(34)))), ((int)(((byte)(38)))));
+            this.lb_funcionarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lb_funcionarios.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_funcionarios.ForeColor = System.Drawing.Color.White;
             this.lb_funcionarios.FormattingEnabled = true;
-            this.lb_funcionarios.Location = new System.Drawing.Point(451, 123);
+            this.lb_funcionarios.ItemHeight = 19;
+            this.lb_funcionarios.Location = new System.Drawing.Point(521, 63);
             this.lb_funcionarios.Name = "lb_funcionarios";
-            this.lb_funcionarios.Size = new System.Drawing.Size(554, 563);
+            this.lb_funcionarios.Size = new System.Drawing.Size(889, 608);
             this.lb_funcionarios.TabIndex = 21;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Poppins SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(515, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(140, 34);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Funcionários";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Location = new System.Drawing.Point(464, 21);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 18);
+            this.pictureBox3.Size = new System.Drawing.Size(2, 656);
+            this.pictureBox3.TabIndex = 23;
+            this.pictureBox3.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(34)))), ((int)(((byte)(38)))));
-            this.ClientSize = new System.Drawing.Size(1024, 729);
+            this.ClientSize = new System.Drawing.Size(1446, 718);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lb_funcionarios);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.txt_telefone);
@@ -346,6 +376,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -372,6 +403,8 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.MaskedTextBox txt_telefone;
         private System.Windows.Forms.ListBox lb_funcionarios;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

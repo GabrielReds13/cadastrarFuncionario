@@ -34,6 +34,12 @@ namespace CadastrarFuncionario
         public Form1()
         {
             InitializeComponent();
+
+            // Formatar Lista
+            lb_funcionarios.Items.Clear();
+            allFuncionarios = Banco.Consultar();
+            lb_funcionarios.Items.AddRange(allFuncionarios);
+            lb_funcionarios.Refresh();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -46,12 +52,12 @@ namespace CadastrarFuncionario
             if (
                 txt_nome.Text           == plchVazios[0] || txt_nome.Text           == plchVazios[1] || txt_nome.Text           == plchVazios[2] || txt_nome.Text           == plch[0] ||
                 txt_dataNascimento.Text == plchVazios[0] || txt_dataNascimento.Text == plchVazios[1] || txt_dataNascimento.Text == plchVazios[2] || txt_dataNascimento.Text == plch[1] ||
-                txt_cpf.Text            == plchVazios[0] || txt_cpf.Text            == plchVazios[1] || txt_cpf.Text            == plchVazios[2] || txt_cpf.Text            == plch[2] ||                       
-                txt_rg.Text             == plchVazios[0] || txt_rg.Text             == plchVazios[1] || txt_rg.Text             == plchVazios[2] || txt_rg.Text             == plch[3] ||                                      
-                txt_telefone.Text       == plchVazios[0] || txt_telefone.Text       == plchVazios[1] || txt_telefone.Text       == plchVazios[2] || txt_telefone.Text       == plch[4] ||                                            
-                txt_email.Text          == plchVazios[0] || txt_email.Text          == plchVazios[1] || txt_email.Text          == plchVazios[2] || txt_email.Text          == plch[5] ||                                       
-                cb_sexo.Text            == plchVazios[0] || cb_sexo.Text            == plchVazios[1] || cb_sexo.Text            == plchVazios[2] || cb_sexo.Text            == plch[6] ||
-                cb_estadoCivil.Text     == plchVazios[0] || cb_estadoCivil.Text     == plchVazios[1] || cb_estadoCivil.Text     == plchVazios[2] || cb_estadoCivil.Text     == plch[7] ||
+                cb_sexo.Text            == plchVazios[0] || cb_sexo.Text            == plchVazios[1] || cb_sexo.Text            == plchVazios[2] || cb_sexo.Text            == plch[2] ||
+                txt_cpf.Text            == plchVazios[0] || txt_cpf.Text            == plchVazios[1] || txt_cpf.Text            == plchVazios[2] || txt_cpf.Text            == plch[3] ||                       
+                txt_rg.Text             == plchVazios[0] || txt_rg.Text             == plchVazios[1] || txt_rg.Text             == plchVazios[2] || txt_rg.Text             == plch[4] ||                                      
+                cb_estadoCivil.Text     == plchVazios[0] || cb_estadoCivil.Text     == plchVazios[1] || cb_estadoCivil.Text     == plchVazios[2] || cb_estadoCivil.Text     == plch[5] ||
+                txt_telefone.Text       == plchVazios[0] || txt_telefone.Text       == plchVazios[1] || txt_telefone.Text       == plchVazios[2] || txt_telefone.Text       == plch[6] ||                                            
+                txt_email.Text          == plchVazios[0] || txt_email.Text          == plchVazios[1] || txt_email.Text          == plchVazios[2] || txt_email.Text          == plch[7] ||                                       
                 cb_funcao.Text          == plchVazios[0] || cb_funcao.Text          == plchVazios[1] || cb_funcao.Text          == plchVazios[2] || cb_funcao.Text          == plch[8]
             ) MessageBox.Show("Existem campos vazios ou não preenchidos corretamente!");
             else 
@@ -77,10 +83,9 @@ namespace CadastrarFuncionario
                     );
                     Banco.Inserir(f);
 
+                    // Formatar Lista
                     lb_funcionarios.Items.Clear();
-
                     allFuncionarios = Banco.Consultar();
-
                     lb_funcionarios.Items.AddRange(allFuncionarios);
                     lb_funcionarios.Refresh();
                 }
@@ -90,7 +95,15 @@ namespace CadastrarFuncionario
 
         private void btn_limpar_Click(object sender, EventArgs e)
         {
-            
+            txt_nome.Text = plch[0];
+            txt_dataNascimento.Text = plch[1];
+            cb_sexo.Text = plch[2];
+            txt_cpf.Text = plch[3];
+            txt_rg.Text = plch[4];
+            cb_estadoCivil.Text = plch[5];
+            txt_telefone.Text = plch[6];
+            txt_email.Text = plch[7];
+            cb_funcao.Text = plch[8];
         }
     }
 }

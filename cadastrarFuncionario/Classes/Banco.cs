@@ -74,7 +74,20 @@ namespace CadastrarFuncionario.Classes
 
                 List<string> lista = new List<string>();
 
-                while(leitor.Read()) lista.Add($"NOME: {leitor.GetString("nome_fun")}; SEXO: {leitor.GetString("sexo_fun")}; DATA NASC: {leitor.GetDateTime("data_nasc_fun").Date}; FUNÇÃO: {leitor.GetString("funcao_fun")};");
+                while(leitor.Read()) lista.Add(
+                    $"NOME: {leitor.GetString("nome_fun")}; " +
+                    $"CPF: {leitor.GetString("cpf_fun")}; " +
+
+                    // Data de nascimento
+                    $"DATA NASC: {leitor.GetDateTime("data_nasc_fun").Day}-" +
+                    $"{leitor.GetDateTime("data_nasc_fun").Month}-" +
+                    $"{leitor.GetDateTime("data_nasc_fun").Year}; " +
+
+                    // Contato
+                    $"TELEFONE: {leitor.GetString("telefone_fun")}; " +
+                    $"EMAIL: {leitor.GetString("email_fun")}; " +
+
+                    $"FUNÇÃO: {leitor.GetString("funcao_fun")}");
 
                 return lista.ToArray();
             }
